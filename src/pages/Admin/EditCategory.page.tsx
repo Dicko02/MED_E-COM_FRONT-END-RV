@@ -7,8 +7,8 @@ import { useNavigate, useParams } from "react-router-dom"
 import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
-import fetchCategory from "../../api/Categorie/fetch-category.api"
-import updateCategory from "../../api/Categorie/update-category.api"
+import fetchCategory from "../../api/Categorie/oneCategory.api"
+import updateCategory from "../../api/Categorie/updateCategory.api"
 
 function EditCategory() {
   const navigate = useNavigate()

@@ -7,8 +7,8 @@ import Header from "../components/Complements/Header.component"
 import Footer from "../components/Complements/Footer.component"
 import Loading from "../components/Complements/Loading.component"
 import ProductCard from "../components/Produit/ProductCard.component"
-import fetchProducts from "../api/Produit/fetch-products.api"
-import fetchCategories from "../api/Categorie/fetch-categories.api"
+import fetchProducts from "../api/Produit/allProducts.api"
+import fetchCategories from "../api/Categorie/allCategories.api"
 
 function Produits() {
   const navigate = useNavigate()

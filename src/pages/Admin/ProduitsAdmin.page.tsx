@@ -5,7 +5,7 @@ import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
 import TableauProduits from "../../components/Produit/TableauProduits.component"
-import fetchProducts from "../../api/Produit/fetch-products.api"
+import fetchProducts from "../../api/Produit/allProducts.api"
 
 function ProduitsAdmin() {
   const [products, setProducts] = useState([])

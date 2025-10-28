@@ -5,7 +5,7 @@ import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
 import TableauClients from "../../components/Client/TableauClients.component"
-import fetchClients from "../../api/Client/fetch-clients.api"
+import fetchClients from "../../api/Client/allClients.api"
 
 function ClientsAdmin() {
   const [clients, setClients] = useState([])

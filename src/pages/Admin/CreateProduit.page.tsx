@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom"
 import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
-import createProduct from "../../api/Produit/create-product.api"
-import fetchCategories from "../../api/Categorie/fetch-categories.api"
+import createProduct from "../../api/Produit/createProduct.api"
+import fetchCategories from "../../api/Categorie/allCategories.api"
 
 function CreateProduit() {
   const navigate = useNavigate()

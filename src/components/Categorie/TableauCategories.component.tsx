@@ -5,8 +5,8 @@ import { DataGrid, type GridColDef, GridActionsCellItem } from "@mui/x-data-grid
 import { Box, Button } from "@mui/material"
 import { Edit, Delete, Add } from "@mui/icons-material"
 import { useNavigate } from "react-router-dom"
-import fetchCategories from "../../api/Categorie/fetch-categories.api"
-import deleteCategory from "../../api/Categorie/delete-category.api"
+import fetchCategories from "../../api/Categorie/allCategories.api"
+import deleteCategory from "../../api/Categorie/deleteCategory.api"
 
 function TableauCategories() {
   const [categories, setCategories] = useState([])

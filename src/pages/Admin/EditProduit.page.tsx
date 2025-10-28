@@ -7,9 +7,9 @@ import { useNavigate, useParams } from "react-router-dom"
 import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
-import fetchProduct from "../../api/Produit/fetch-product.api"
-import updateProduct from "../../api/Produit/update-product.api"
-import fetchCategories from "../../api/Categorie/fetch-categories.api"
+import fetchProduct from "../../api/Produit/oneProduct.api"
+import updateProduct from "../../api/Produit/updateProduct.api"
+import fetchCategories from "../../api/Categorie/allCategories.api"
 
 function EditProduit() {
   const navigate = useNavigate()

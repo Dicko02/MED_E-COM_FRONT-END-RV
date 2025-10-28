@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import fetchClientLogin from "../api/Client/fetch-client-login.api"
+import fetchClientLogin from "../api/Client/clientLogin.api"
 import Loading from "../components/Complements/Loading.component"
 
 function Connexion() {

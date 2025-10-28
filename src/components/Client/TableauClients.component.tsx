@@ -4,8 +4,8 @@ import { useState, useEffect } from "react"
 import { DataGrid, type GridColDef, GridActionsCellItem } from "@mui/x-data-grid"
 import { Box } from "@mui/material"
 import { Delete } from "@mui/icons-material"
-import fetchClients from "../../api/Client/fetch-clients.api"
-import deleteClient from "../../api/Client/delete-client.api"
+import fetchClients from "../../api/Client/allClients.api"
+import deleteClient from "../../api/Client/deleteClient.api"
 
 function TableauClients() {
   const [clients, setClients] = useState([])

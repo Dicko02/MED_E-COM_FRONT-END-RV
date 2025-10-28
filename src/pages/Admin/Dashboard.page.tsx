@@ -7,10 +7,10 @@ import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
 import Loading from "../../components/Complements/Loading.component"
 import StatCard from "../../components/DashBoard/StatCard.component"
-import fetchProducts from "../../api/Produit/fetch-products.api"
-import fetchCategories from "../../api/Categorie/fetch-categories.api"
-import fetchClients from "../../api/Client/fetch-clients.api"
-import fetchOrders from "../../api/Commande/fetch-orders.api"
+import fetchProducts from "../../api/Produit/allProducts.api"
+import fetchCategories from "../../api/Categorie/allCategories.api"
+import fetchClients from "../../api/Client/allClients.api"
+import fetchOrders from "../../api/Commande/allOrders.api"
 
 function DashboardAdmin() {
   const navigate = useNavigate()

@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import fetchAdminLogin from "../api/Admin/fetch-admin-login.api"
+import fetchAdminLogin from "../api/Admin/adminLogin.api"
 import Loading from "../components/Complements/Loading.component"
 
 function ConnexionAdmin() {

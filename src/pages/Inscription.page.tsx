@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import fetchClientRegister from "../api/Client/fetch-client-register.api"
+import fetchClientRegister from "../api/Client/clientRegister.api"
 import Loading from "../components/Complements/Loading.component"
 
 function Inscription() {

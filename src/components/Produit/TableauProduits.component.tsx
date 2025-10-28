@@ -5,8 +5,8 @@ import { DataGrid, type GridColDef, GridActionsCellItem } from "@mui/x-data-grid
 import { Box, Button } from "@mui/material"
 import { Edit, Delete, Add } from "@mui/icons-material"
 import { useNavigate } from "react-router-dom"
-import fetchProducts from "../../api/Produit/fetch-products.api"
-import deleteProduct from "../../api/Produit/delete-product.api"
+import fetchProducts from "../../api/Produit/allProducts.api"
+import deleteProduct from "../../api/Produit/deleteProduct.api"
 
 function TableauProduits() {
   const [products, setProducts] = useState([])

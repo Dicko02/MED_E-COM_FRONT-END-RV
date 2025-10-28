@@ -5,7 +5,7 @@ import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
 import TableauCategories from "../../components/Categorie/TableauCategories.component"
-import fetchCategories from "../../api/Categorie/fetch-categories.api"
+import fetchCategories from "../../api/Categorie/allCategories.api"
 
 function CategoriesAdmin() {
   const [categories, setCategories] = useState([])

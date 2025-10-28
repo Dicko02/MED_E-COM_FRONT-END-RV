@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom"
 import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
-import createCategory from "../../api/Categorie/create-category.api"
+import createCategory from "../../api/Categorie/createCategory.api"
 
 function CreateCategory() {
   const navigate = useNavigate()

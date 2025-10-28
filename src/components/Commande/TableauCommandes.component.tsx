@@ -5,8 +5,8 @@ import { DataGrid, type GridColDef, GridActionsCellItem } from "@mui/x-data-grid
 import { Box, Chip } from "@mui/material"
 import { Visibility, Delete } from "@mui/icons-material"
 import { useNavigate } from "react-router-dom"
-import fetchOrders from "../../api/Commande/fetch-orders.api"
-import deleteOrder from "../../api/Commande/delete-order.api"
+import fetchOrders from "../../api/Commande/allOrders.api"
+import deleteOrder from "../../api/Commande/deleteOrder.api"
 
 function TableauCommandes() {
   const [orders, setOrders] = useState([])

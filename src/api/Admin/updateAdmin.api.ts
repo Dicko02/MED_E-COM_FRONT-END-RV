@@ -1,6 +1,6 @@
 import axios from "axios"
 
-async function updateAdmin(id: number, data: any) {
+async function updateAdmin(nom: string, prenom: string, number: string, email: string, password: string, id: number) {
   try {
     const session = localStorage.getItem("adminSession")
     if (!session) throw new Error("Session introuvable")
@@ -10,7 +10,7 @@ async function updateAdmin(id: number, data: any) {
 
     const response = await axios.put(
       `http://${import.meta.env.VITE_API_IP}:${import.meta.env.VITE_API_PORT}/api/admin/${id}`,
-      data,
+      { nom, prenom, number, email, password },
       {
         headers: {
           Authorization: `Bearer ${token}`,

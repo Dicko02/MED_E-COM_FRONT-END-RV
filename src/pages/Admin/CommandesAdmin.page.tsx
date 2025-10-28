@@ -5,7 +5,7 @@ import Header from "../../components/Complements/Header.component"
 import Footer from "../../components/Complements/Footer.component"
 import SideBar from "../../components/Complements/SideBar.component"
 import TableauCommandes from "../../components/Commande/TableauCommandes.component"
-import fetchOrders from "../../api/Commande/fetch-orders.api"
+import fetchOrders from "../../api/Commande/allOrders.api"
 
 function CommandesAdmin() {
   const [orders, setOrders] = useState([])
