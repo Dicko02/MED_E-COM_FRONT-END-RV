@@ -80,7 +80,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     const data = await authApi.verifyCode(email, code);
     if (data?.token) {
       localStorage.setItem('token', data.token);
+      alert('Code vérifié avec succès');
       await checkAuth(data.token);
+    }else {
+      throw new Error('Code de vérification invalide');
     }
   };
 
@@ -89,7 +92,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     try {
       await authApi.logout();
     } catch {
-      // ignore erreur backend
+      // Même en cas d'erreur, on veut quand même se déconnecter côté client
     } finally {
       localStorage.removeItem('token');
       setUser(null);

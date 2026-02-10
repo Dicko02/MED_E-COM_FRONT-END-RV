@@ -41,12 +41,30 @@ export const Header = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-100 pb-4">
-          <a href="/" className="block px-4 py-2 text-gray-600">Accueil</a>
-          <a href="/produits" className="block px-4 py-2 text-gray-600">Produits</a>
+        <div className="flex flex-col border-t border-gray-100 mt-4 pt-4 space-y-1">
+  
+          {/* Menu pour l'ADMIN */}
           {user?.role === 'admin' && (
-            <a href="/admin/dashboard" className="block px-4 py-2 text-gray-600">Dashboard</a>
+            <a href="/admin/dashboard" className="block px-4 py-2 text-gray-600 rounded-md hover:bg-red-50 hover:text-red-600 transition-colors">
+              Dashboard Admin
+            </a>
           )}
+
+          {/* Menu pour le CLIENT */}
+          {user?.role === 'client' && (
+            <>
+              <a href="/" className="block px-4 py-2 text-gray-600 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                Accueil
+              </a>
+              <a href="/produits" className="block px-4 py-2 text-gray-600 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                Produits
+              </a>
+              <a href="/panier" className="block px-4 py-2 text-gray-600 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                Panier
+              </a>
+            </>
+          )}
+
         </div>
       )}
     </header>

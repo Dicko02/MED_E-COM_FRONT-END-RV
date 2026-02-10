@@ -78,6 +78,7 @@ export const InscriptionPage = () => {
 
     try {
       await verifyCode(formData.email, verificationCode);
+      alert('Vous allez être redirigé.');
       setSuccess('Inscription validée ! Redirection...');
       
       setTimeout(() => {
